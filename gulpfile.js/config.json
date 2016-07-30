@@ -1,0 +1,33 @@
+{
+  "theme": {
+    "name": "Gulp WordPress Starter",
+    "textdomain": "gulp-wordpress-starter",
+    "destFile": "gulp-wordpress-starter.pot",
+    "destDir": "./languages",
+    "package": "gulp-wordpress-starter",
+    "bugReport": "https://wordpress.org",
+    "lastTranslator": "John Doe <me@example.com>",
+    "team": "Team <team@example.com>"
+  },
+
+  "root": {
+    "base": "./",
+    "src": "./assets/src",
+    "dest": "./assets/dist"
+  },
+
+  "css": {
+    "src": "./assets/src/sass",
+    "dest": "./assets/dist/css"
+  },
+
+  "js": {
+    "src": "./assets/src/scripts",
+    "dest": "./assets/dist/js"
+  },
+
+  "images": {
+    "src": "./assets/src/raw-images",
+    "dest": "./assets/dist/images"
+  }
+}
