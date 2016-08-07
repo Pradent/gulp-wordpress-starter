@@ -17,6 +17,8 @@ gulp.task('sass', function () {
  return gulp.src(config.css.src + '/style.scss')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
+  .pipe(autoprefixer(config.css.autoprefixer))
   .pipe(sourcemaps.write(config.root.base, config.css.sourcemaps))
   .pipe(gulp.dest(config.root.base))
+  .pipe(notify({ message: 'Styles task complete.', onLast: true }))
 });

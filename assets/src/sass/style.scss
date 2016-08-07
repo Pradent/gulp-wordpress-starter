@@ -8,22 +8,16 @@ Version:      1.0
 Text Domain:  text_domain
 */
 
-// Helpers & Variables
 @import "helpers/variables";
 @import "helpers/mixins";
 
-// Base
 @import "base/global";
 @import "base/typography";
 
-// Components
 @import "components/footer";
 @import "components/form";
 @import "components/header";
 @import "components/navbar";
 @import "components/separator";
-// Add more as per requirements
 
-// Views
 @import "views/home";
-// Add more as per requirements
