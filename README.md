@@ -7,7 +7,7 @@ Gulp tasks with sample assets structure which can be use as a starting point for
 - Adds theme information to the style.css header
 
 #### CSS
-- Compiles SASS using [gulp-ruby-sass]
+- Compiles SASS using [gulp-sass]
 - Autoprefixes CSS properties using [gulp-autoprefixer]
 - Minifies CSS using [gulp-clean-css]
 - Generates sourcemap using [gulp-sourcemaps]
@@ -49,7 +49,7 @@ gulp watch
 - Add your task name to [default.js]
 
 [gulp-wp-pot]: https://www.npmjs.com/package/gulp-wp-pot
-[gulp-ruby-sass]: https://github.com/sindresorhus/gulp-ruby-sass
+[gulp-sass]: https://www.npmjs.com/package/gulp-sass
 [gulp-autoprefixer]: https://www.npmjs.com/package/gulp-autoprefixer
 [gulp-clean-css]: https://www.npmjs.com/package/gulp-clean-css
 [gulp-sourcemaps]: https://www.npmjs.com/package/gulp-sourcemaps
