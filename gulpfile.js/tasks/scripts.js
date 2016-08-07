@@ -1,10 +1,13 @@
+// Config
+var config = require('../config');
+if(!config.js) return
+
 // Require Plugins
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
-    uglify = require('gulp-uglify')
-    config = require('../config');
+    uglify = require('gulp-uglify');
 
 // Scripts
 gulp.task('scripts', function() {

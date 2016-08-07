@@ -1,3 +1,7 @@
+// Config
+var config = require('../config');
+if(!config.css) return
+
 // Require Plugins
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
@@ -6,18 +10,14 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     ignore = require('gulp-ignore'),
     rename = require('gulp-rename'),
-    notify = require('gulp-notify'),
-    config = require('../config');
+    notify = require('gulp-notify');
 
 // Styles
 gulp.task('sass', () =>
     sass(config.css.src + '/style.scss', {sourcemap: true})
         .on('error', sass.logError)
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(sourcemaps.write(config.root.base,  {
-          includeContent: false,
-          sourceRoot: 'source'
-        }))
+        .pipe(autoprefixer(config.css.autoprefixer))
+        .pipe(sourcemaps.write(config.root.base, config.css.sourcemaps))
         .pipe(gulp.dest(config.root.base))
         .pipe(ignore.exclude('*.map'))
         .pipe(cleanCSS({ sourceMap: false }))

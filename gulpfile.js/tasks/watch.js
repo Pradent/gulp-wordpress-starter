@@ -1,6 +1,8 @@
+// Config
+var config = require('../config');
+
 // Require Plugins
-var gulp = require('gulp'),
-    config = require('../config');
+var gulp = require('gulp');
 
 // Watch
 gulp.task('watch', function() {

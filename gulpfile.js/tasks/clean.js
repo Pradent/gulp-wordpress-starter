@@ -1,7 +1,9 @@
+// Config
+var config = require('../config');
+
 // Require Plugins
 var gulp = require('gulp'),
-    del = require('del')
-    config = require('../config');
+    del = require('del');
 
 // Clean
 gulp.task('clean', function() {

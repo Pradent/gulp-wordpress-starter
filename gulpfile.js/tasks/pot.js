@@ -1,7 +1,10 @@
+// Config
+var config = require('../config');
+
+// Require Plugins
 var gulp = require('gulp'),
     sort = require('gulp-sort'),
-    wpPot = require('gulp-wp-pot'),
-    config = require('../config');
+    wpPot = require('gulp-wp-pot');
 
 // pot file
 gulp.task('pot', function () {
