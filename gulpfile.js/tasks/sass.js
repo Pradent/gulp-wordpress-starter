@@ -23,5 +23,5 @@ gulp.task('sass', () =>
         .pipe(cleanCSS({ sourceMap: false }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(config.root.base))
-        .pipe(notify({ message: 'Styles task complete.' }))
+        .pipe(notify({ message: 'Styles task complete.', onLast: true }))
 );

@@ -12,22 +12,5 @@
 
 var requireDir = require('require-dir')
 
-// Require Plugins
-var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    uglify = require('gulp-uglify'),
-    sourcemaps = require('gulp-sourcemaps'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    ignore = require('gulp-ignore'),
-    concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
-    wpPot = require('gulp-wp-pot'),
-    sort = require('gulp-sort'),
-    del = require('del');
-    
 // Require all tasks in gulpfile.js/tasks, including subfolders
 requireDir('./tasks', { recurse: true })
